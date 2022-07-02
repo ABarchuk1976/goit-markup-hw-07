@@ -135,6 +135,7 @@ address {
 
 .section {
   min-width: var(--width-container);
+  max-width: var(--width-page);
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
   margin: 0 auto;
@@ -428,7 +429,10 @@ address {
 /* styles for index.html/main */
 
 /* Hero */
-.hero {
+.hero__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1600px;
   height: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -441,34 +445,13 @@ address {
   padding-bottom: var(--padding-hero);
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-.hero-button {
-  background-color: var(--bg-button-primary);
-  color: var(--color-button-primary);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
-
-  transition: background-color var(--duration-primary) var(--timing-primary);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--bg-btn-hover);
 }
 
 .backdrop {
@@ -710,21 +693,22 @@ address {
   color: var(--color-accent);
 }
 
-/* Peculiarities */
+/* achievement */
 
-.perculiarities-list {
+.achievement__section {
+  padding-bottom: 0;
+}
+
+.achievement__list {
   display: flex;
-  margin-left: calc(-1 * var(--gap-h));
-  margin-top: calc(-1 * var(--gap-v));
+  gap: var(--gap-h);
 }
 
-.perculiarities-item {
-  flex-basis: calc(100% / 4 - var(--gap-h));
-  margin-left: var(--gap-h);
-  margin-top: var(--gap-v);
+.achievement__item {
+  flex-basis: 270px;
 }
 
-.perculiarities-item-icon {
+.achievement__thumb {
   height: 120px;
   display: flex;
   align-items: center;
@@ -733,45 +717,21 @@ address {
   margin-bottom: 30px;
 }
 
-.icon-antenna-size {
-  width: 65.32px;
-  height: 70px;
-}
-
-.icon-vector-size {
-  width: 89.69px;
-  height: 70px;
-}
-
-.icon-clock-size {
-  width: 70px;
-  height: 70px;
-}
-
-.icon-astronaut-size {
-  width: 79.31px;
-  height: 70px;
-}
-.peculiarities-title {
+.achievement__subtitle {
   display: block;
   text-align: left;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--color-h-third);
-  margin-bottom: 10px;
+  color: var(--color-h-second);
 }
 
-.peculiarities-p {
+.achievement__text {
   line-height: 1.71;
   text-align: left;
 }
-/* destinations */
-.destinations {
-  padding-top: 0;
-}
 
-.destinations-title,
+.achievement__title,
 .team-title,
 .clients-title {
   font-weight: 700;
