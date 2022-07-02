@@ -68,6 +68,10 @@
   --shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadow-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-card-staff: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* body */
@@ -817,8 +821,7 @@ address {
   margin-left: var(--gap-h);
   margin-top: var(--gap-v);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-card-staff);
 }
 
 .team-description {
@@ -961,6 +964,7 @@ address {
   letter-spacing: 0.06em;
   cursor: pointer;
   padding: 6px 22px;
+  box-shadow: none;
 
   transition: color var(--duration-primary) var(--timing-primary),
     background-color var(--duration-primary) var(--timing-primary),
@@ -975,8 +979,7 @@ address {
 .filter-button:focus {
   background-color: var(--bg-button-primary);
   color: var(--color-button-primary);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-btn-filter);
 }
 
 .accent-button {
@@ -1009,8 +1012,6 @@ address {
 .potfolio-thumb {
   position: relative;
   overflow: hidden;
-
-  /* transition: transform var(--duration-primary) var(--timing-primary); */
 }
 
 .portfolio-thumb-overlay {
