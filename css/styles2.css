@@ -356,12 +356,11 @@ address {
   margin-bottom: 20px;
 }
 
-.social__list {
-  display: flex;
-}
-
+.social__list,
 .social__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__item:not(:last-child) {
@@ -717,7 +716,7 @@ address {
   margin-bottom: 30px;
 }
 
-.achievement__subtitle {
+.achievement__title {
   display: block;
   text-align: left;
   font-weight: 700;
@@ -731,8 +730,8 @@ address {
   text-align: left;
 }
 
-.achievement__title,
-.team-title,
+.department__title,
+.staff__title,
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -741,16 +740,16 @@ address {
   margin-bottom: 50px;
 }
 
-.destinations-list {
+.department__list {
   display: flex;
   justify-content: space-between;
 }
 
-.destinations-item {
+.department__item {
   position: relative;
 }
 
-.destination-description {
+.department__subtitle {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -766,17 +765,17 @@ address {
   background-color: var(--bg-achievement);
 }
 /* Our team */
-.team {
+.staff {
   background-color: var(--bg-section-staff);
 }
 
-.team-cards {
+.staff__card-set {
   display: flex;
   margin-left: calc(-1 * var(--gap-h));
   margin-top: calc(-1 * var(--gap-v));
 }
 
-.team-card {
+.staff__card {
   flex-basis: calc(100% / 4 - var(--gap-h));
   margin-left: var(--gap-h);
   margin-top: var(--gap-v);
@@ -784,13 +783,13 @@ address {
   box-shadow: var(--shadow-card-staff);
 }
 
-.team-description {
+.staff__description {
   background-color: var(--bg-card-staff);
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.staff__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -798,7 +797,7 @@ address {
   margin-bottom: 10px;
 }
 
-.team-position {
+.staff__position {
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-p);
@@ -806,32 +805,13 @@ address {
   margin-bottom: 16px;
 }
 
-.team-social-items {
-  display: flex;
-  justify-content: center;
-}
-
-.team-social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-social-link {
-  display: block;
-  padding: 12px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--bg-link-social-staff);
-  list-style: none;
-  margin: 0;
-  color: var(--team-social-icons-color);
-  cursor: pointer;
-
+.social__link--refill {
+  color: var(--color-icon-social-staff);
   transition: color var(--duration-primary) var(--timing-primary);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--color-accent);
+.social__link--refill:hover,
+.social__link--refill:focus {
   color: var(--color-icon-social-staff-hover);
 }
 
