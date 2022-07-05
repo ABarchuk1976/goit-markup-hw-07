@@ -3,7 +3,7 @@
 }
 
 .department__list {
-  @include positioning-flex($js: space-between, $ai: stretch);
+  @include positioning-flex($jc: space-between, $ai: stretch);
 }
 
 .department__item {

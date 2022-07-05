@@ -628,7 +628,7 @@ address {
 }
 
 /* modal */
-
+/*  */
 .backdrop {
   position: fixed;
   top: 0;
@@ -642,13 +642,13 @@ address {
 
   transition: visibility var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .backdrop--is-hidden {
   visibility: hidden;
   pointer-events: none;
   transition: visibility var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .modal {
   position: relative;
   padding: var(--padding-modal);
@@ -656,7 +656,7 @@ address {
   border-radius: var(--radius-board-primary);
   box-shadow: var(--shadow-modal);
 }
-
+/*  */
 .backdrop--is-hidden .modal {
   position: absolute;
   top: 50%;
@@ -665,7 +665,7 @@ address {
   transform: translate(-50%, -50%) scale(0.2);
   opacity: 0;
 }
-
+/*  */
 .backdrop__modal {
   position: absolute;
   top: 50%;
@@ -677,7 +677,7 @@ address {
   transition: opacity var(--duration-primary) var(--timing-primary),
     transform var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -698,7 +698,7 @@ address {
 
   transition: color var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   color: var(--color-accent);
@@ -894,7 +894,7 @@ address {
   background-color: var(--bg-btn-primary);
   color: var(--color-btn-primary);
 }
-
+/*  */
 .portfolio__button:hover,
 .portfolio__button:focus {
   background-color: var(--bg-btn-primary);

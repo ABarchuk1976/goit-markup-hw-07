@@ -182,7 +182,7 @@ address {
   fill: currentColor;
 }
 
-.social-cta, .sign-up__cta {
+.social__cta, .sign-up__cta {
   display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
