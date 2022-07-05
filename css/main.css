@@ -239,6 +239,12 @@ address {
   overflow: hidden;
 }
 
+.social-cta {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: var(--bg-page);
@@ -246,5 +252,43 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.14;
+}
+
+.social {
+  color: var(--color-cta-footer);
+}
+
+.social__list, .social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--bg-social-icon-footer);
+  padding: 12px;
+  -webkit-transition: background-color var(--duration-primary) var(--timing-primary);
+  transition: background-color var(--duration-primary) var(--timing-primary);
+}
+
+.social__link:hover, .social__link:focus {
+  background-color: var(--color-accent);
 }
 /*# sourceMappingURL=main.css.map */
