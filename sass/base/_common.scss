@@ -1,8 +1,8 @@
 body {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: var(--font-family-primary);
   background-color: var(--bg-page);
   color: var(--color-p);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
+  font-size: var(--font-size-primary);
+  letter-spacing: var(--letter-spacing-primary);
+  line-height: var(--line-height-primary);
 }

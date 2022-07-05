@@ -77,12 +77,12 @@
 
 /* */
 body {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: var(--font-family-primary);
   background-color: var(--bg-page);
   color: var(--color-p);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
+  font-size: var(--font-size-primary);
+  letter-spacing: var(--letter-spacing-primary);
+  line-height: var(--line-height-primary);
 }
 
 /*  */
@@ -200,7 +200,7 @@ address {
 /*  */
 .logo {
   display: block;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: var(--font-family-secondary);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -308,24 +308,24 @@ address {
   display: flex;
   align-items: baseline;
 }
-
+/*  */
 .footer__logo {
   color: var(--color-logo-footer);
   margin-bottom: 20px;
 }
-
+/*  */
 .address__list {
   display: block;
   font-style: normal;
   margin: 0;
 }
-
+/*  */
 .address__postaddress {
   line-height: 1.71;
   color: var(--color-addredd-footer);
   margin-bottom: 9px;
 }
-
+/*  */
 .address__email {
   display: block;
   text-decoration: none;
@@ -335,7 +335,7 @@ address {
 
   transition: color var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .address__tel {
   text-decoration: none;
   color: var(--color-contact-footer);
@@ -343,7 +343,7 @@ address {
 
   transition: color var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .address__email:hover,
 .address__email:focus,
 .address__tel:hover,
@@ -355,11 +355,11 @@ address {
 .social {
   color: var(--color-cta-footer);
 }
-/* в футер контейнер */
+/*  */
 .container__social {
   margin-left: 70px;
 }
-/* so */
+/*  */
 .social__cta,
 .sign-up__cta {
   display: block;
@@ -397,14 +397,14 @@ address {
   background-color: var(--color-accent);
 }
 
-.sign-up {
-  color: var(--color-cta-footer);
-}
-
+/*  */
 .container__sign-up {
   margin-left: auto;
 }
 
+.sign-up {
+  color: var(--color-cta-footer);
+}
 .sign-up__form {
   display: flex;
   align-items: center;
@@ -427,18 +427,19 @@ address {
   border: 1px solid var(--color-board-input-footer);
   border-radius: var(--radius-board-primary);
 }
-
+/*  */
 .sign-up__icon {
   display: inline-block;
   fill: var(--color-btn-submit-modal);
 }
-
+/*  */
 .sign-up__icon--append {
   margin-left: 10px;
 }
 /* styles for index.html/main */
 
 /* Hero */
+/*  */
 .hero__section {
   display: flex;
   flex-direction: column;
@@ -454,7 +455,7 @@ address {
   padding-top: var(--padding-hero);
   padding-bottom: var(--padding-hero);
 }
-
+/*  */
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -465,20 +466,20 @@ address {
 }
 
 /* achievement */
-
+/*  */
 .achievement__section {
   padding-bottom: 0;
 }
-
+/*  */
 .achievement__list {
   display: flex;
   gap: var(--gap-h);
 }
-
+/*  */
 .achievement__item {
   flex-basis: 270px;
 }
-
+/*  */
 .achievement__thumb {
   height: 120px;
   display: flex;
@@ -487,7 +488,7 @@ address {
   background-color: var(--bg-achievement);
   margin-bottom: 30px;
 }
-
+/*  */
 .achievement__title {
   display: block;
   text-align: left;
@@ -496,12 +497,12 @@ address {
   text-transform: uppercase;
   color: var(--color-h-second);
 }
-
+/*  */
 .achievement__text {
   line-height: 1.71;
   text-align: left;
 }
-
+/* d */
 .department__title,
 .staff__title,
 .clientage__title {
