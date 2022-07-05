@@ -297,13 +297,14 @@ address {
 }
 
 /* Footer */
+/*  */
 .footer {
   min-width: var(--width-container);
   background-color: var(--bg-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+/*  */
 .footer__container {
   display: flex;
   align-items: baseline;
@@ -401,15 +402,16 @@ address {
 .container__sign-up {
   margin-left: auto;
 }
-
+/*  */
 .sign-up {
   color: var(--color-cta-footer);
 }
+/*  */
 .sign-up__form {
   display: flex;
   align-items: center;
 }
-
+/*  */
 .sign-up__input {
   display: flex;
   align-items: center;
@@ -502,7 +504,7 @@ address {
   line-height: 1.71;
   text-align: left;
 }
-/* d */
+/*  */
 .department__title,
 .staff__title,
 .clientage__title {
