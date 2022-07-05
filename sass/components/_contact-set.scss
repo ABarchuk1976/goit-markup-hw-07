@@ -3,6 +3,8 @@
 }
 
 .contact__item {
+  height: 100%;
+  @include positioning-flex($jc: left);
   @extend %header-menu-indent;
 
   &:last-child {
@@ -11,8 +13,8 @@
 }
 
 .contact__link {
-  display: inline-flex;
-  align-items: center;
+  @include positioning-flex(inline-flex, left);
+  height: 100%;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
