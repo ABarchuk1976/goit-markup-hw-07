@@ -1,1 +1,11 @@
+@import './utils/variables';
+
 @import './base/fonts';
+@import './base/resets';
+
+@import './utils/_variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/common';

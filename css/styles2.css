@@ -1,4 +1,5 @@
 /* Colors of project */
+/*  */
 :root {
   --color-accent: #2196f3;
   --color-addredd-footer: #ffffff;
@@ -74,7 +75,7 @@
   --width-form-modal: 448px;
 }
 
-/* body */
+/* */
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: var(--bg-page);
@@ -84,6 +85,7 @@ body {
   line-height: 1.14;
 }
 
+/*  */
 h1,
 h2,
 h3,
@@ -120,6 +122,7 @@ address {
 }
 /* common styles for header and footer*/
 
+/*  */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -132,7 +135,7 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/*  */
 .section {
   min-width: var(--width-container);
   max-width: var(--width-page);
@@ -141,7 +144,7 @@ address {
   margin: 0 auto;
   text-align: center;
 }
-
+/*  */
 .container {
   width: var(--width-container);
   padding-left: var(--padding-container);
@@ -150,7 +153,7 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
-
+/*  */
 .button {
   display: flex;
   align-items: center;
@@ -174,7 +177,7 @@ address {
 
   transition: background-color var(--duration-primary) var(--timing-primary);
 }
-
+/*  */
 .button:hover,
 .button:focus {
   background-color: var(--bg-btn-hover);
@@ -193,7 +196,7 @@ address {
   display: flex;
   align-items: stretch;
 }
-
+/*  */
 .logo {
   display: block;
   font-family: 'Raleway', 'Arial', sans-serif;
@@ -203,7 +206,7 @@ address {
   color: var(--color-logo-header);
   text-decoration: none;
 }
-
+/*  */
 .logo--accent {
   color: var(--color-accent);
 }
@@ -343,6 +346,7 @@ address {
   color: var(--color-accent);
 }
 
+/*  */
 .social {
   color: var(--color-cta-footer);
 }
