@@ -1,6 +1,5 @@
 .contact__list {
-  display: flex;
-  align-items: center;
+  @include positioning-flex($jc: left);
 }
 
 .contact__item {

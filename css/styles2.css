@@ -283,7 +283,7 @@ address {
   color: var(--color-link-header);
   transition: color var(--duration-primary) var(--timing-primary);
 }
-/* co so cli */
+/* */
 .contact__icon,
 .social__icon,
 .clientage__icon,
@@ -699,8 +699,8 @@ address {
   transition: color var(--duration-primary) var(--timing-primary);
 }
 /*  */
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   color: var(--color-accent);
 }
 

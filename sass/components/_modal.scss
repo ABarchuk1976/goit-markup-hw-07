@@ -4,32 +4,36 @@
   background-color: var(--bg-modal);
   border-radius: var(--radius-board-primary);
   box-shadow: var(--shadow-modal);
+}
 
-  &__close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin: 0;
-    padding: 0;
-    color: var(--color-btn-close);
-    border: 1px solid var(--color-board-btn-close);
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-btn-close);
+  border: 1px solid var(--color-board-btn-close);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
 
-    transition: color var(--duration-primary) var(--timing-primary);
-  }
+  transition: color var(--duration-primary) var(--timing-primary);
 
-  &__close-btn:hover,
-  &__close-btn:focus {
+  &:hover,
+  &:focus {
     color: var(--color-accent);
   }
+}
+
+.modal__close-icon {
+  @extend %fill-icon;
 }
 
 .backdrop--is-hidden .modal {
