@@ -177,7 +177,7 @@ address {
   margin-right: 0;
 }
 
-.contact__icon {
+.social__icon, .contact__icon {
   display: block;
   fill: currentColor;
 }
@@ -283,6 +283,16 @@ body {
 
 .social__link:hover, .social__link:focus {
   background-color: var(--color-accent);
+}
+
+.social__link--refill {
+  color: var(--color-icon-social-staff);
+  -webkit-transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--duration-primary) var(--timing-primary);
+}
+
+.social__link--refill:hover, .social__link--refill:focus {
+  color: var(--color-icon-social-staff-hover);
 }
 
 /* header */

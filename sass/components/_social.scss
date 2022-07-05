@@ -14,6 +14,10 @@
   @extend %footer-cta;
 }
 
+.social__icon {
+  @extend %fill-icon;
+}
+
 .social__link {
   display: block;
   list-style: none;
@@ -30,5 +34,15 @@
   &:hover,
   &:focus {
     background-color: var(--color-accent);
+  }
+
+  &--refill {
+    color: var(--color-icon-social-staff);
+    transition: color var(--duration-primary) var(--timing-primary);
+  }
+
+  &--refill:hover,
+  &--refill:focus {
+    color: var(--color-icon-social-staff-hover);
   }
 }
